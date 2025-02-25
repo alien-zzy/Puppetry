@@ -1,0 +1,15 @@
+# Ignore the Library folder
+/Library/
+/Temp/
+/obj/
+/Build/
+/Builds/
+.vs/
+.idea/
+.user/
+.userprefs/
+*.suo
+*.user
+*.userosscache
+*.sln
+*.svd
