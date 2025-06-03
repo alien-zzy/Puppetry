@@ -1,0 +1,458 @@
+2025-06-03 16:06:55,158 - INFO - Waiting for Unity to connect...
+2025-06-03 16:06:55,158 - INFO - Arm1 IP: 192.168.43.53, Arm2 IP: 192.168.43.111
+2025-06-03 16:07:04,703 - INFO - Connected by ('127.0.0.1', 7759)
+2025-06-03 16:07:19,767 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E141728080>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:20,051 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Read timed out. (read timeout=3)
+2025-06-03 16:07:20,051 - INFO - 
+=== 系统状态 [16:07:20] ===
+运行时间: 00:00:24
+成功命令: 0 | 错误命令: 2
+最近坐标: 1.577118,-7.160413,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E141728080>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Read timed out. (read timeout=3)
+========================================
+2025-06-03 16:07:20,052 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:20,052 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:20,052 - WARNING - Received invalid data format. Expected 6 values, got 67
+2025-06-03 16:07:23,112 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B8E00>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:23,112 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E141749280>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+2025-06-03 16:07:23,112 - INFO - 
+=== 系统状态 [16:07:23] ===
+运行时间: 00:00:27
+成功命令: 0 | 错误命令: 4
+最近坐标: 1.577118,-7.160413,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Read timed out. (read timeout=3)
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B8E00>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E141749280>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:07:23,113 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:23,113 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:23,113 - WARNING - Received invalid data format. Expected 6 values, got 37
+2025-06-03 16:07:26,144 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B8770>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+2025-06-03 16:07:26,144 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B89E0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:26,144 - INFO - 
+=== 系统状态 [16:07:26] ===
+运行时间: 00:00:30
+成功命令: 0 | 错误命令: 6
+最近坐标: 1.577118,-7.160413,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E141749280>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B8770>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B89E0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:07:26,145 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:26,145 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:26,145 - WARNING - Received invalid data format. Expected 6 values, got 67
+2025-06-03 16:07:29,214 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BACC0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:29,214 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BA8A0>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+2025-06-03 16:07:29,214 - INFO - 
+=== 系统状态 [16:07:29] ===
+运行时间: 00:00:34
+成功命令: 0 | 错误命令: 8
+最近坐标: 1.577118,-6.531736,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B89E0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BACC0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BA8A0>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:07:29,215 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:29,215 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:29,215 - WARNING - Received invalid data format. Expected 6 values, got 42
+2025-06-03 16:07:32,292 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BA390>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+2025-06-03 16:07:32,292 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E14143B170>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:32,292 - INFO - 
+=== 系统状态 [16:07:32] ===
+运行时间: 00:00:37
+成功命令: 0 | 错误命令: 10
+最近坐标: 1.577118,-6.677732,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BA8A0>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BA390>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E14143B170>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:07:32,292 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:32,293 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:32,293 - WARNING - Received invalid data format. Expected 6 values, got 52
+2025-06-03 16:07:35,324 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B8770>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+2025-06-03 16:07:35,324 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B9AC0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:35,324 - INFO - 
+=== 系统状态 [16:07:35] ===
+运行时间: 00:00:40
+成功命令: 0 | 错误命令: 12
+最近坐标: 1.577118,-6.491307,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E14143B170>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B8770>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B9AC0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:07:35,326 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:35,326 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:35,326 - WARNING - Received invalid data format. Expected 6 values, got 47
+2025-06-03 16:07:38,393 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B96A0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:38,393 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BB590>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+2025-06-03 16:07:38,393 - INFO - 
+=== 系统状态 [16:07:38] ===
+运行时间: 00:00:43
+成功命令: 0 | 错误命令: 14
+最近坐标: 1.577118,-8.622833,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B9AC0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B96A0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BB590>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:07:38,394 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:38,394 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:38,394 - WARNING - Received invalid data format. Expected 6 values, got 42
+2025-06-03 16:07:41,424 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B9CA0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:41,424 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BA150>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+2025-06-03 16:07:41,424 - INFO - 
+=== 系统状态 [16:07:41] ===
+运行时间: 00:00:46
+成功命令: 0 | 错误命令: 16
+最近坐标: 1.577118,-6.756344,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BB590>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B9CA0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BA150>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:07:41,425 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:41,425 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:41,425 - WARNING - Received invalid data format. Expected 6 values, got 37
+2025-06-03 16:07:44,485 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BB020>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:44,485 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BB560>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+2025-06-03 16:07:44,485 - INFO - 
+=== 系统状态 [16:07:44] ===
+运行时间: 00:00:49
+成功命令: 0 | 错误命令: 18
+最近坐标: 1.577118,-6.756344,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BA150>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BB020>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BB560>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:07:44,485 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:07:44,486 - WARNING - Received invalid data format. Expected 6 values, got 89
+2025-06-03 16:07:44,486 - WARNING - Received invalid data format. Expected 6 values, got 56
+2025-06-03 16:07:47,543 - ERROR - Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E14177FDD0>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+2025-06-03 16:07:47,543 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E14177FAD0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:07:47,544 - INFO - 
+=== 系统状态 [16:07:47] ===
+运行时间: 00:00:52
+成功命令: 0 | 错误命令: 20
+最近坐标: 1.577118,-6.756344,-4.042774,1.577118,-8.53299,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417BB560>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.111: HTTPConnectionPool(host='192.168.43.111', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E14177FDD0>, 'Connection to 192.168.43.111 timed out. (connect timeout=3)'))
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E14177FAD0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:07:47,544 - WARNING - Received invalid data format. Expected 6 values, got 76
+2025-06-03 16:08:02,626 - ERROR - Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B9FD0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+2025-06-03 16:08:02,626 - INFO - 
+=== 系统状态 [16:08:02] ===
+运行时间: 00:01:07
+成功命令: 1 | 错误命令: 21
+最近坐标: 1.577118,-6.756344,-4.042774,1.577118,-8.53299,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E14177FAD0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.53: HTTPConnectionPool(host='192.168.43.53', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001E1417B9FD0>, 'Connection to 192.168.43.53 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:08:02,626 - INFO - Connection closed
+2025-06-03 16:11:30,230 - INFO - Waiting for Unity to connect...
+2025-06-03 16:11:30,230 - INFO - Arm1 IP: 192.168.43.6, Arm2 IP: 192.168.43.111
+2025-06-03 16:11:38,711 - INFO - Connected by ('127.0.0.1', 7909)
+2025-06-03 16:11:49,317 - ERROR - Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Read timed out. (read timeout=3)
+2025-06-03 16:11:49,317 - INFO - 
+=== 系统状态 [16:11:49] ===
+运行时间: 00:00:19
+成功命令: 1 | 错误命令: 1
+最近坐标: 1.577118,-7.160413,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Read timed out. (read timeout=3)
+========================================
+2025-06-03 16:11:49,318 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:11:49,318 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:11:49,318 - WARNING - Received invalid data format. Expected 6 values, got 42
+2025-06-03 16:11:52,343 - ERROR - Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D158950>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+2025-06-03 16:11:52,343 - INFO - 
+=== 系统状态 [16:11:52] ===
+运行时间: 00:00:22
+成功命令: 2 | 错误命令: 2
+最近坐标: 1.577118,-7.160413,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Read timed out. (read timeout=3)
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D158950>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:11:52,344 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:11:52,344 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:11:52,345 - WARNING - Received invalid data format. Expected 6 values, got 57
+2025-06-03 16:11:55,419 - ERROR - Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635A8AB320>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+2025-06-03 16:11:55,419 - INFO - 
+=== 系统状态 [16:11:55] ===
+运行时间: 00:00:25
+成功命令: 3 | 错误命令: 3
+最近坐标: 1.577118,-6.356543,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D158950>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635A8AB320>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:11:55,419 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:11:55,419 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:11:55,419 - WARNING - Received invalid data format. Expected 6 values, got 47
+2025-06-03 16:11:58,507 - ERROR - Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D1587A0>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+2025-06-03 16:11:58,507 - INFO - 
+=== 系统状态 [16:11:58] ===
+运行时间: 00:00:28
+成功命令: 4 | 错误命令: 4
+最近坐标: 1.577118,-8.348812,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635A8AB320>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D1587A0>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:11:58,507 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:11:58,507 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:11:58,507 - WARNING - Received invalid data format. Expected 6 values, got 52
+2025-06-03 16:12:01,536 - ERROR - Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D159940>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+2025-06-03 16:12:01,536 - INFO - 
+=== 系统状态 [16:12:01] ===
+运行时间: 00:00:31
+成功命令: 5 | 错误命令: 5
+最近坐标: 1.577118,-6.125196,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D1587A0>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D159940>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:12:01,537 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:01,537 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:01,537 - WARNING - Received invalid data format. Expected 6 values, got 47
+2025-06-03 16:12:04,606 - ERROR - Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D15A810>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+2025-06-03 16:12:04,606 - INFO - 
+=== 系统状态 [16:12:04] ===
+运行时间: 00:00:34
+成功命令: 6 | 错误命令: 6
+最近坐标: 1.577118,-6.401464,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D159940>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D15A810>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:12:04,606 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:04,606 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:04,606 - WARNING - Received invalid data format. Expected 6 values, got 67
+2025-06-03 16:12:07,670 - ERROR - Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D15AE70>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+2025-06-03 16:12:07,670 - INFO - 
+=== 系统状态 [16:12:07] ===
+运行时间: 00:00:37
+成功命令: 7 | 错误命令: 7
+最近坐标: 1.577118,-7.522256,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D15A810>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D15AE70>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:12:07,671 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:07,671 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:07,671 - WARNING - Received invalid data format. Expected 6 values, got 52
+2025-06-03 16:12:10,712 - ERROR - Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:2.848397,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D123650>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+2025-06-03 16:12:10,712 - INFO - 
+=== 系统状态 [16:12:10] ===
+运行时间: 00:00:40
+成功命令: 8 | 错误命令: 8
+最近坐标: 2.848397,-6.630564,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":2.848397,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:1.577118,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D15AE70>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:2.848397,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D123650>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:12:10,712 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:10,713 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:10,713 - WARNING - Received invalid data format. Expected 6 values, got 67
+2025-06-03 16:12:13,759 - ERROR - Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:2.848397,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D15AF00>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+2025-06-03 16:12:13,759 - INFO - 
+=== 系统状态 [16:12:13] ===
+运行时间: 00:00:43
+成功命令: 9 | 错误命令: 9
+最近坐标: 2.848397,-6.630564,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":2.848397,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:2.848397,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D123650>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+  [192.168.43.111] Response: null
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:2.848397,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D15AF00>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+========================================
+2025-06-03 16:12:13,759 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:13,759 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:13,759 - WARNING - Received invalid data format. Expected 6 values, got 72
+2025-06-03 16:12:16,647 - INFO - 
+=== 系统状态 [16:12:16] ===
+运行时间: 00:00:46
+成功命令: 11 | 错误命令: 9
+最近坐标: 2.848397,-6.630564,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":2.848397,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  Error sending to 192.168.43.6: HTTPConnectionPool(host='192.168.43.6', port=80): Max retries exceeded with url: /js?json=%7B%22T%22:1041,%22x%22:150,%22y%22:2.848397,%22z%22:0,%22t%22:3.14%7D (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002635D15AF00>, 'Connection to 192.168.43.6 timed out. (connect timeout=3)'))
+  [192.168.43.111] Response: null
+  [192.168.43.6] Response: null
+========================================
+2025-06-03 16:12:16,647 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:16,648 - WARNING - Received invalid data format. Expected 6 values, got 88
+2025-06-03 16:12:16,648 - WARNING - Received invalid data format. Expected 6 values, got 32
+2025-06-03 16:12:16,925 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:17,185 - WARNING - Received invalid data format. Expected 6 values, got 16
+2025-06-03 16:12:17,399 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:17,622 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:17,794 - INFO - 
+=== 系统状态 [16:12:17] ===
+运行时间: 00:00:47
+成功命令: 21 | 错误命令: 9
+最近坐标: 3.506497,-6.630564,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":3.506497,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  [192.168.43.6] Response: null
+  [192.168.43.6] Response: null
+  [192.168.43.111] Response: null
+========================================
+2025-06-03 16:12:17,939 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:18,118 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:18,340 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:18,709 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:18,879 - INFO - 
+=== 系统状态 [16:12:18] ===
+运行时间: 00:00:48
+成功命令: 35 | 错误命令: 9
+最近坐标: 3.506497,-6.630564,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":3.506497,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  [192.168.43.6] Response: null
+  [192.168.43.6] Response: null
+  [192.168.43.111] Response: null
+========================================
+2025-06-03 16:12:19,037 - WARNING - Received invalid data format. Expected 6 values, got 16
+2025-06-03 16:12:19,270 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:19,578 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:19,748 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:19,980 - INFO - 
+=== 系统状态 [16:12:19] ===
+运行时间: 00:00:49
+成功命令: 47 | 错误命令: 9
+最近坐标: 4.382468,-6.630564,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":4.382468,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  [192.168.43.111] Response: null
+  [192.168.43.6] Response: null
+  [192.168.43.111] Response: null
+========================================
+2025-06-03 16:12:19,980 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:20,204 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:20,449 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:20,621 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:20,787 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:21,057 - INFO - 
+=== 系统状态 [16:12:21] ===
+运行时间: 00:00:50
+成功命令: 61 | 错误命令: 9
+最近坐标: 10.55918,-6.630564,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":10.55918,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  [192.168.43.111] Response: null
+  [192.168.43.6] Response: null
+  [192.168.43.111] Response: null
+========================================
+2025-06-03 16:12:21,058 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:21,322 - WARNING - Received invalid data format. Expected 6 values, got 16
+2025-06-03 16:12:21,648 - WARNING - Received invalid data format. Expected 6 values, got 16
+2025-06-03 16:12:21,822 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:22,035 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:22,190 - INFO - 
+=== 系统状态 [16:12:22] ===
+运行时间: 00:00:51
+成功命令: 73 | 错误命令: 9
+最近坐标: 4.427389,-6.630564,-4.042774,1.577118,-7.160413,-4.042774
+最近命令:
+  命令1: {"T":1041,"x":150,"y":4.427389,"z":0,"t":3.14}
+  命令2: {"T":1041,"x":150,"y":1.577118,"z":0,"t":3.14}
+最近响应:
+  [192.168.43.111] Response: null
+  [192.168.43.111] Response: null
+  [192.168.43.6] Response: null
+========================================
+2025-06-03 16:12:22,190 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:22,464 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:22,640 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:22,848 - WARNING - Received invalid data format. Expected 6 values, got 11
+2025-06-03 16:12:58,571 - INFO - Connection closed
