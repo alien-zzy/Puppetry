@@ -1927,7 +1927,7 @@ HingeJoint:
   m_Anchor: {x: 0.16, y: 2.59, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.68400055, y: -2.381998, z: 1.0532802}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -2017,8 +2017,12 @@ MonoBehaviour:
   tripodSize: 1
   boneColor: {r: 0, g: 0, b: 1, a: 0.5}
   m_Transforms:
-  - {fileID: 3950059271729939999}
-  - {fileID: 7203319071224831146}
+  - {fileID: 1932094983015176217}
+  - {fileID: 4895545218509692177}
+  - {fileID: 769341988176721608}
+  - {fileID: 7180429094602001051}
+  - {fileID: 444657067173562828}
+  - {fileID: 2179676133856854918}
 --- !u!1 &5270968357965471473
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,7 +2609,7 @@ HingeJoint:
   m_Anchor: {x: -0.57, y: 2.66, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 2.0959978, y: -2.0420008, z: -0.36671972}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -2812,7 +2816,7 @@ HingeJoint:
   m_Anchor: {x: 0.91, y: 1.28, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 1.9140114, y: -5.5230002, z: 0.21006268}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
