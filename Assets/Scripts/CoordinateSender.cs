@@ -22,7 +22,7 @@ public class CoordinateSender : MonoBehaviour
     {
         frameCount++;
 
-        if (frameCount >= 10)
+        if (frameCount >= 5)
         {
             Vector3 armOnePosition = armOne.transform.position;
             Vector3 armTwoPosition = armTwo.transform.position;

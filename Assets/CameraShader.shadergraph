@@ -235,10 +235,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -580.0,
-            "y": 210.00003051757813,
-            "width": 208.00003051757813,
-            "height": 434.9999694824219
+            "x": -648.0,
+            "y": 126.99998474121094,
+            "width": 208.0,
+            "height": 435.0
         }
     },
     "m_Slots": [
@@ -624,7 +624,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Opacity",
     "m_StageCapability": 3,
-    "m_Value": 0.11999999731779099,
+    "m_Value": 0.10999999940395355,
     "m_DefaultValue": 1.0,
     "m_Labels": []
 }

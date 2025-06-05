@@ -4,6 +4,8 @@
 /obj/
 /Build/
 /Builds/
+/Recordings/
+/Assets/皮影戏/
 .vs/
 .idea/
 .user/
