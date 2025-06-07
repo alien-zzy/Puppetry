@@ -55,3 +55,33 @@ The system has been tested under the following environment:
 | OS                | Windows 10 / 11                          |
 
 > ⚠️ Please ensure all devices are on the same LAN for real-time synchronization.
+
+## 🔗 Meta Quest Link Setup
+
+To run this VR project with **Meta Quest 2** via PC VR, follow these steps:
+
+1. **Install Meta Quest Link (Oculus PC App)**  
+   Download and install the Oculus app for Windows:  
+   👉 [https://www.meta.com/quest/setup/](https://www.meta.com/quest/setup/)
+
+2. **Enable Developer Mode** on your Quest device  
+   - Open the **Meta Quest mobile app**  
+   - Go to *Menu → Devices → Developer Mode → Enable*
+
+3. **Connect Your Headset to PC**
+   - Option 1: Use a **USB-C cable (Oculus Link)**
+   - Option 2: Use **Air Link** (wirelessly, same LAN)
+
+4. **Launch the Oculus PC App**
+   - Go to *Settings → Beta → Enable Air Link* if using wireless
+   - In your headset, confirm the connection by selecting **“Enable Link”**
+
+5. **Ensure OpenXR Runtime is Set to Oculus**
+   - In Oculus app: *Settings → General → Set Oculus as OpenXR Runtime*
+
+6. **(Optional) Launch SteamVR**
+   - SteamVR will automatically detect Oculus runtime
+
+7. **Run the Unity Project**
+   - Open Unity and enter Play Mode
+
