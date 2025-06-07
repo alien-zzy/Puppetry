@@ -5,9 +5,12 @@ using Unity.VisualScripting;
 using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Valve.VR;
 
 public class Controller : MonoBehaviour
 {
+    public SteamVR_Action_Boolean move;
+    public SteamVR_Input_Sources handType = SteamVR_Input_Sources.LeftHand;
     public Transform handTransform;
     public Transform headset;
     public Transform Center;
@@ -15,6 +18,7 @@ public class Controller : MonoBehaviour
 
     enum movingmode { target, whole };
     enum hand { left, right };
+    enum button { tigger, on, off }
     private hand myhand = hand.left;
     private movingmode mymovingmode = movingmode.target;
     Vector3 head_current_position = Vector3.one;
@@ -22,6 +26,7 @@ public class Controller : MonoBehaviour
     float current_distance_y = 0;
     public float distance_x = 0;
     public float distance_y = 0;
+    private button Movingbutton = button.off;
     //distance_x max: 0.78 min 0.16
     //distance_y 
     //target_y max 8.6 min 6.6
@@ -33,7 +38,9 @@ public class Controller : MonoBehaviour
         {
             //this is right hand controller;
             myhand = hand.right;
+            handType = SteamVR_Input_Sources.RightHand;
         }
+
     }
 
     // Update is called once per frame
@@ -45,27 +52,38 @@ public class Controller : MonoBehaviour
 
         distance_x = headset.position.x - handTransform.position.x;
         distance_y = headset.position.y - handTransform.position.y;
-
+        bool handmove = move.GetState(handType);
         //press button to move the puppet
-        if (Input.GetKeyDown(KeyCode.A) && myhand == hand.left)
+        if (handmove && Movingbutton == button.off)
+        {
+            Movingbutton = button.tigger;
+        }
+        if (Movingbutton == button.tigger && myhand == hand.left)
         {
             mymovingmode = movingmode.whole;
             head_current_position = Head_position;
             current_distance_x = distance_x;
             current_distance_y = distance_y;
+            Movingbutton = button.on;
         }
-        if (Input.GetKeyDown(KeyCode.B) && myhand == hand.right)
+        if (Movingbutton == button.tigger && myhand == hand.right)
         {
             mymovingmode = movingmode.whole;
             head_current_position = Head_position;
             current_distance_x = distance_x;
             current_distance_y = distance_y;
+            Movingbutton = button.on;
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        if (!handmove && Movingbutton == button.on)
+        {
+            Movingbutton = button.off;
+        }
+
+        if (Movingbutton == button.off)
         {
             mymovingmode = movingmode.target;
         }
-        Debug.Log(distance_x);
         switch (mymovingmode)
         {
             case movingmode.target:
@@ -77,6 +95,7 @@ public class Controller : MonoBehaviour
                 break;
             case movingmode.whole:
                 //move whole body
+                Debug.Log(current_distance_x - distance_x);
                 Head_position.x = head_current_position.x + 10 * (current_distance_x - distance_x);
                 Head_position.y = head_current_position.y + 10 * (current_distance_y - distance_y);
                 Head.position = Head_position;
