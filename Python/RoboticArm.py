@@ -24,7 +24,6 @@ logger = logging.getLogger(__name__)
 last_debug_output = time.time()
 debug_info = {
     "last_position": "",
-    "last_transformed_position": "",  # 存储变换后的坐标
     "last_commands": [],
     "start_time": datetime.now()
 }
@@ -41,84 +40,44 @@ def send_command(ip, command):
 
 
 def send_to_robot_arms(position):
-    """处理坐标并发送到两个机械臂"""
+    """接收坐标并直接发送到两个机械臂"""
     try:
-        coordinates = position.split(',')
+        # 直接存储原始坐标用于调试
+        debug_info["last_position"] = position
+
+        # 分割坐标字符串为6个数值
+        coordinates = [float(coord) for coord in position.split(',')]
         if len(coordinates) != 6:
             return
 
-        # 存储原始坐标用于调试
-        debug_info["last_position"] = position
+        # 直接解析为两个机械臂的坐标
+        arm1_coords = coordinates[0:3]  # x1, y1, z1
+        arm2_coords = coordinates[3:6]  # x2, y2, z2
+        arm1_coords[2] += 150
+        arm2_coords[2] += 150
+        # 坐标限幅处理（保持安全范围）
 
-        # === 坐标变换处理 ===
-        transformed_coords = []
-        # 对每个物体的三个坐标分别处理
-        for i in range(0, len(coordinates), 3):
-            try:
-                if i == 0:  # 第一个物体对应ARM1
-                    x = (-float(coordinates[i]) - 47) * 300
-                    y = 200
-                    z = 200
-                    y += 150
-                    x -= 160
-                if i == 3:  # 第二个物体对应ARM2
-                    x = (-float(coordinates[i]) - 45.6) * 300
-                    y = 200
-                    z = 200
-                    y += 150
-
-                transformed_coords.extend(
-                    [round(x, 1), round(y, 1), round(z, 1)])
-            except (IndexError, ValueError):
-                transformed_coords.extend([0.0, 0.0, 0.0])
-
-        # 存储变换后的坐标用于调试
-        transformed_str = ",".join([f"{x:.1f}" for x in transformed_coords])
-        debug_info["last_transformed_position"] = transformed_str
-        # === 坐标变换结束 ===
-
-        # 解析两个物体的坐标（使用变换后的坐标）
-        coords = [
-            (transformed_coords[0], transformed_coords[1],
-             transformed_coords[2]),
-            (transformed_coords[3],
-             transformed_coords[4], transformed_coords[5])
-        ]
-
-        # 坐标限幅处理
         def clamp(x, min_val, max_val):
             return max(min(x, max_val), min_val)
 
-        clamped_coords = []
-        for x, y, z in coords:
-            clamped_coords.append((
-                clamp(x, -400, 400),
-                clamp(y, 0, 400),
-                z  # z值不参与机械臂控制，但保留处理
-            ))
+        # 对每个坐标值进行限幅
+        clamped_arm1 = [clamp(coord, -400, 400) for coord in arm1_coords]
+        clamped_arm2 = [clamp(coord, -400, 400) for coord in arm2_coords]
 
-        # 构造命令 (使用固定x=150和t=3.14)
-        commands = []
-        for y, z, _ in clamped_coords:  # 使用y和z，忽略原始z值
-            command = f'{{"T":1041,"x":200,"y":{y},"z":200,"t":3.14}}'
-            commands.append(command)
+        # 构造命令 (使用固定t=3.14，但使用实际坐标值)
+        arm1_command = f'{{"T":1041,"x":200,"y":{clamped_arm1[1]:.1f},"z":{clamped_arm1[2]:.1f},"t":3.14}}'
+        arm2_command = f'{{"T":1041,"x":200,"y":{clamped_arm2[1]:.1f},"z":{clamped_arm2[2]:.1f},"t":3.14}}'
 
         # 存储命令用于调试
-        debug_info["last_commands"] = commands
+        debug_info["last_commands"] = [arm1_command, arm2_command]
 
-        # 分配命令给机械臂（第一个给机械臂1，第二个给机械臂2）
-        arm1_commands = [commands[0]]
-        arm2_commands = [commands[1]]
+        # 直接发送命令给相应的机械臂
+        def send_to_arm(ip, cmd):
+            send_command(ip, cmd)
 
-        # 创建发送线程
-        def send_to_arm(ip, cmds):
-            for cmd in cmds:
-                send_command(ip, cmd)
-
-        t1 = threading.Thread(target=send_to_arm,
-                              args=(ARM1_IP, arm1_commands))
-        t2 = threading.Thread(target=send_to_arm,
-                              args=(ARM2_IP, arm2_commands))
+        # 使用线程同时发送
+        t1 = threading.Thread(target=send_to_arm, args=(ARM1_IP, arm1_command))
+        t2 = threading.Thread(target=send_to_arm, args=(ARM2_IP, arm2_command))
 
         t1.start()
         t2.start()
@@ -147,21 +106,13 @@ def print_debug_info():
             if len(raw_coords) >= 6:
                 point1 = f"({raw_coords[0]}, {raw_coords[1]}, {raw_coords[2]})"
                 point2 = f"({raw_coords[3]}, {raw_coords[4]}, {raw_coords[5]})"
-                debug_output.append(f"原始坐标: 第一个点: {point1} 第二个点: {point2}")
-
-        # 解析变换后的坐标
-        if debug_info["last_transformed_position"]:
-            trans_coords = debug_info["last_transformed_position"].split(',')
-            if len(trans_coords) >= 6:
-                point1 = f"({trans_coords[0]}, {trans_coords[1]}, {trans_coords[2]})"
-                point2 = f"({trans_coords[3]}, {trans_coords[4]}, {trans_coords[5]})"
-                debug_output.append(f"转换后坐标: 第一个点: {point1} 第二个点: {point2}")
+                debug_output.append(f"原始坐标: ARM1: {point1}  ARM2: {point2}")
 
         # 添加发送的指令
         if debug_info["last_commands"]:
             debug_output.append("发送给机械臂的指令:")
             for i, cmd in enumerate(debug_info["last_commands"]):
-                debug_output.append(f"  机械臂{i+1}: {cmd}")
+                debug_output.append(f"  机械臂{i + 1}: {cmd}")
 
         debug_output.append("=" * 40)
 
@@ -187,14 +138,14 @@ def main():
     try:
         while True:
             data = client_socket.recv(1024)
-            logger.info(data)
             if not data:
                 break
             position = data.decode('utf-8').strip()
+            logger.info(f"Received position: {position}")
             send_to_robot_arms(position)
             print_debug_info()  # 每次处理完数据后检查是否需要输出调试信息
-    except Exception:
-        pass
+    except Exception as e:
+        logger.error(f"Error occurred: {str(e)}")
     finally:
         client_socket.close()
         server_socket.close()

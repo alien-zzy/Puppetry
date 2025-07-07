@@ -656,6 +656,7 @@ MonoBehaviour:
   move:
     actionPath: /actions/default/in/Righthandmove
     needsReinit: 0
+  handType: 1
   handTransform: {fileID: 163288254}
   headset: {fileID: 148595101}
   Center: {fileID: 1232160289342511921}
@@ -846,6 +847,7 @@ MonoBehaviour:
   move:
     actionPath: /actions/default/in/Lefthandmove
     needsReinit: 0
+  handType: 1
   handTransform: {fileID: 1365880545}
   headset: {fileID: 148595101}
   Center: {fileID: 7207577441036924965}
@@ -1005,7 +1007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2121684056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1020,6 +1022,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   armOne: {fileID: 1645871370}
   armTwo: {fileID: 1590048715}
+  Head: {fileID: 2405196029502639033}
+  HeadInitialPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &2121684057
 Transform:
   m_ObjectHideFlags: 0
