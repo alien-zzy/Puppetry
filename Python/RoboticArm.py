@@ -259,7 +259,7 @@ class RoboticArmControl:
             self.root.after(0, lambda: self.progress_var.set(progress))
 
             # Wait for next frame
-            time.sleep(0.005)  # 5ms interval
+            time.sleep(0.006)  # 5ms interval
 
         self.path_playing = False
         self.root.after(0, lambda: self.path_status.config(
@@ -377,7 +377,7 @@ class RoboticArmControl:
             # Add Z offset to each arm
             arm1_coords[2] += 150
             arm2_coords[2] += 150
-            arm3_coords[2] += 150
+            arm3_coords[2] += 125
 
             # Coordinate clamping (keep within safe range)
             def clamp(x, min_val, max_val):
