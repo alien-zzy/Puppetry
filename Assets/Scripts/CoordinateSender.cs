@@ -58,22 +58,26 @@ public class CoordinateSender : MonoBehaviour
 
         if (frameCount >= 5)
         {
+            // Get controller distance from controller object
             float left_distance_x = armOne.GetComponent<Controller>().distance_x;
             float left_distance_y = armOne.GetComponent<Controller>().distance_y;
             float right_distance_x = armTwo.GetComponent<Controller>().distance_x;
             float right_distance_y = armTwo.GetComponent<Controller>().distance_y;
+
             Vector3 Headposition = Head.transform.position - HeadInitialPosition;
             Vector3 armOnePosition = armOne.transform.position;
             Vector3 armTwoPosition = armTwo.transform.position;
+
             armOnePosition.x = (Headposition.x + left_distance_x - 0.4f) * 100;
             armOnePosition.y = (Headposition.y - left_distance_y) * 150;
             armTwoPosition.x = (Headposition.x + right_distance_x + 0.4f) * 100;
             armTwoPosition.y = (Headposition.y - right_distance_y) * 150;
             Headposition.x = Headposition.x * 100;
             Headposition.y = Headposition.y * 150;
+
             Debug.Log($"Left:{armOnePosition.x},{armOnePosition.y}" +
                              $"Right:{armTwoPosition.x},{armTwoPosition.y}");
-            // 只发送两个物体的坐标（9个值）
+            // send coordinate
             writer.WriteLine($"{armOnePosition.z},{armOnePosition.x},{armOnePosition.y}," +
                              $"{armTwoPosition.z},{armTwoPosition.x},{armTwoPosition.y}," +
                              $"{Headposition.z},{Headposition.x},{Headposition.y}");
